@@ -1,0 +1,6 @@
+{
+  "name": "LandAcq AI - Predictive Land Acquisition Delay Analytics",
+  "description": "AI-powered predictive decision support platform for early detection, risk scoring, delay driver diagnostics, and mitigation of land acquisition delays in infrastructure projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

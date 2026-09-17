@@ -1,4 +1,5 @@
-# TerraGuard — Predictive Analytics System for Early Detection of Land Acquisition Delays
+// Comprehensive README content for direct in-browser download
+export const README_MARKDOWN_CONTENT = `# TerraGuard — Predictive Analytics System for Early Detection of Land Acquisition Delays
 
 [![Problem Statement](https://img.shields.io/badge/SIH--2026-Problem%20ID%2026017-blue.svg)](https://www.sih.gov.in/)
 [![Sponsoring Ministry](https://img.shields.io/badge/Ministry-Rural%20Development-green.svg)](https://rural.gov.in/)
@@ -79,16 +80,16 @@ The platform models and monitors the full 7-stage lifecycle mandated under the *
 - Multi-channel dispatch integration (SMS, Email, PM GatiShakti Webhook, WhatsApp Officer Gateway).
 
 ### 7. 🧠 Continuous Learning & Model Drift Engine
-- **Model Telemetry**: Live performance monitoring (AUC-ROC: `0.942`, MAE: `2.1 wks`, Precision: `91.4%`, Recall: `93.8%`).
+- **Model Telemetry**: Live performance monitoring (AUC-ROC: 0.942, MAE: 2.1 wks, Precision: 91.4%, Recall: 93.8%).
 - **Feature Importance (SHAP)**: Ranks primary predictors (Title Litigation % > Circle Rate Discrepancy > Mutation Backlog > Tribal PESA Quorum).
-- **Online Drift Retraining**: Simulate automated retraining on newly ingested field ground-truth data with model versioning (e.g., `XGBoost v3.4.1` → `v3.5.0`).
+- **Online Drift Retraining**: Simulate automated retraining on newly ingested field ground-truth data with model versioning (e.g., XGBoost v3.4.1 → v3.5.0).
 
 ### 8. 🛡️ Cryptographic Audit Trail & Document Vault
 - SHA-256 tamper-evident digital verification logs for all statutory approvals, gazette notifications, awards, and compensation payments.
 - Filterable by actor, action type, IP address, and date range.
 
 ### 9. 🔌 Open API & PM GatiShakti Data Integration Hub
-- Standardized RESTful endpoints (`/api/v1/predict-delay`, `/api/v1/projects`, `/api/v1/what-if-simulate`, `/api/v1/gis/corridors`).
+- Standardized RESTful endpoints (/api/v1/predict-delay, /api/v1/projects, /api/v1/what-if-simulate, /api/v1/gis/corridors).
 - Interactive cURL examples and JSON response schemas for integration with NIC portals, Bhoomi, Bhulekh, and PM GatiShakti.
 
 ---
@@ -109,7 +110,7 @@ The platform dynamically adjusts UI views, permission gates, and actions based o
 ## 🛠️ Technology Stack
 
 - **Frontend Framework**: React 18+ with TypeScript
-- **Styling & Layout**: Tailwind CSS (Sophisticated Light Theme, Anti-Slop Design System)
+- **Styling & Layout**: Tailwind CSS
 - **Data Visualizations**: Recharts (Area, Bar, Pie/Donut, Radar charts)
 - **Iconography**: Lucide React
 - **Geospatial & Vector Mapping**: SVG-based responsive national corridor canvas with coordinate projections
@@ -120,23 +121,27 @@ The platform dynamically adjusts UI views, permission gates, and actions based o
 
 ## 📁 Project Directory Structure
 
-```
+\`\`\`
 ├── .env.example                  # Environment variable declarations
 ├── index.html                    # Entry HTML document with SEO/meta tags
 ├── metadata.json                 # AI Studio Applet capabilities and metadata
 ├── package.json                  # Dependencies and build scripts
 ├── tsconfig.json                 # TypeScript compiler configuration
 ├── vite.config.ts                # Vite build & plugin configuration
+├── README.md                     # Comprehensive project documentation
+├── METHODOLOGY_AND_PROCESS_FLOW.md # Complete methodology & process flow guide
 └── src/
     ├── App.tsx                   # Main app container, tab switcher & routing
     ├── main.tsx                  # React DOM root entry point
     ├── index.css                 # Tailwind CSS directives & global styling
     ├── types.ts                  # Shared TypeScript interfaces, types & enums
     ├── data/
-    │   └── mockData.ts           # Curated national projects, stages, GIS data & surveys
+    │   ├── mockData.ts           # Curated national projects, stages, GIS data & surveys
+    │   └── readmeContent.ts      # Markdown content for in-browser download
     └── components/
         ├── Navbar.tsx            # Header navigation, RBAC role switcher & search
         ├── ExecutiveDashboard.tsx# National overview, KPIs, and risk triage
+        ├── MethodologySlidesView.tsx# Slide deck presentation view
         ├── ScopeOfStudyView.tsx  # RFCTLARR Act 2013 7-stage taxonomy & problem scope
         ├── ProjectsListView.tsx  # Filterable and sortable corridor portfolio
         ├── GisCorridorMapView.tsx# National & state GIS cadastral map
@@ -149,7 +154,7 @@ The platform dynamically adjusts UI views, permission gates, and actions based o
         ├── ApiDocsView.tsx       # REST API schemas & integration hub
         ├── ProjectDetailModal.tsx# In-depth corridor modal with timeline & stages
         └── NewPredictionModal.tsx# Custom project delay scoring wizard
-```
+\`\`\`
 
 ---
 
@@ -162,36 +167,36 @@ The platform dynamically adjusts UI views, permission gates, and actions based o
 ### Installation
 
 1. **Clone the repository**:
-   ```bash
+   \`\`\`bash
    git clone https://github.com/your-org/terraguard-sih26017.git
    cd terraguard-sih26017
-   ```
+   \`\`\`
 
 2. **Install dependencies**:
-   ```bash
+   \`\`\`bash
    npm install
-   ```
+   \`\`\`
 
 3. **Start the development server**:
-   ```bash
+   \`\`\`bash
    npm run dev
-   ```
+   \`\`\`
 
 4. **Build for production**:
-   ```bash
+   \`\`\`bash
    npm run build
-   ```
+   \`\`\`
 
 5. **Preview production build**:
-   ```bash
+   \`\`\`bash
    npm run preview
-   ```
+   \`\`\`
 
 ---
 
 ## 📈 Machine Learning Workflow
 
-```
+\`\`\`
 [ Cadastral Records / Bhulekh ] ─┐
 [ Gazette Notifications ]       ─┼──> [ Feature Extraction & Normalization ]
 [ High Court Case Scrapes ]     ─┤       │
@@ -207,7 +212,7 @@ The platform dynamically adjusts UI views, permission gates, and actions based o
                                          ▼
                      [ Proactive Counterfactual Interventions ]
                      (What-If Simulation & Delay Reduction)
-```
+\`\`\`
 
 ---
 
@@ -222,3 +227,4 @@ The platform dynamically adjusts UI views, permission gates, and actions based o
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+`;
